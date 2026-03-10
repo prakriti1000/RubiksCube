@@ -1,0 +1,12 @@
+{
+    "java.project.sourcePaths": [
+        "src"
+    ],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "C:/javafx-sdk-21.0.9/lib/**/*.jar"
+    ],
+    "vscode-pets.theme": "castle",
+    "vscode-pets.throwBallWithMouse": true,
+    "vscode-pets.position": "explorer"
+}

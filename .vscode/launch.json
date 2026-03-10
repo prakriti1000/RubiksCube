@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch RubiksView",
+      "request": "launch",
+      "mainClass": "View.RubiksView",
+      "vmArgs": "--module-path C:/javafx-sdk-21.0.9/lib --add-modules javafx.controls,javafx.fxml"
+    }
+  ]
+}
