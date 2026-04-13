@@ -3,10 +3,10 @@
   "configurations": [
     {
       "type": "java",
-      "name": "Launch RubiksView",
+      "name": "Launch Rubiks Cube",
       "request": "launch",
-      "mainClass": "View.RubiksView",
-      "vmArgs": "--module-path C:/javafx-sdk-21.0.9/lib --add-modules javafx.controls,javafx.fxml"
+      "mainClass": "RubiksDriver",
+      "vmArgs": "--module-path C:/javafx-sdk-21.0.9/lib --add-modules javafx.controls,javafx.fxml,javafx.graphics"
     }
   ]
 }

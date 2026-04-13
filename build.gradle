@@ -23,5 +23,5 @@ javafx {
 }
 
 application {
-    mainClass = 'View.Main' // update this to wherever the main class will be later
+    mainClass = 'RubiksDriver'
 }

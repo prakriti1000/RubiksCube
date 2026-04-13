@@ -3,8 +3,8 @@ package Model;
 public class RubiksFace implements Face {
 
   private Colors[][] faceColors;
-  private int row; // row and col are the same
-  private FaceValues faceValue;
+  private final int row; // row and col are the same
+  private final FaceValues faceValue;
 
   public RubiksFace(int row, Colors faceColors, FaceValues faceValue) {
     this.row = row;
@@ -51,9 +51,7 @@ public class RubiksFace implements Face {
 
   @Override
   public void setRow(int rowIndex, Colors[] newColors) {
-    for (int col = 0; col < this.row; col++) {
-      faceColors[rowIndex][col] = newColors[col];
-    }
+      System.arraycopy(newColors, 0, faceColors[rowIndex], 0, this.row);
   }
 
   @Override
@@ -66,9 +64,7 @@ public class RubiksFace implements Face {
   @Override
   public Colors[] getRow(int rowIndex) {
     Colors[] rowColors = new Colors[this.row];
-    for (int col = 0; col < this.row; col++) {
-      rowColors[col] = faceColors[rowIndex][col];
-    }
+      System.arraycopy(faceColors[rowIndex], 0, rowColors, 0, this.row);
     return rowColors;
   }
 

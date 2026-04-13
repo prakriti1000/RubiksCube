@@ -3,7 +3,7 @@ package Moves;
 import Model.RubiksCube;
 
 public class Right implements Command {
-  private RubiksCube cube;
+  private final RubiksCube cube;
 
   public Right(RubiksCube cube) {
     this.cube = cube;
